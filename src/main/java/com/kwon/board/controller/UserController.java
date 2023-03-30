@@ -13,6 +13,7 @@ import lombok.RequiredArgsConstructor;
 public class UserController {
 	private final UserService userService;
 	
+	// 회원가입
 	@PostMapping ("/user/join")
 	public String okJoin(UserDto userDto) {
 		userService.join(userDto);
